@@ -2,9 +2,8 @@
 - 2-	Se modifica el ./Properties/launchSetting.json quitando la entrada https de applicationUrl para evitar el uso de un certificado SSL en la conexión.
 - 3-	Se crean las siguientes carpetas: Entities,Interfaces,Repositories,Data
 - 4-	Se verifica la compilacion con > dotnet run o se ejecuta en VS con IISExpress
-- 5-	Se prueba el endpoint GET http://localhost:5000/WeatherForecast desde postman
-- 6-	Se crea el gestor de archivos que se encarga de leer y escribir en json
-- 	https://www.newtonsoft.com/json/help/html/SerializingJSON.htm dotnet add projectSoft.csproj package Newtonsoft.Json
+- 5-	Se prueba el endpoint GET http://localhost:5000/WeatherForecast desde postman o http://localhost:5000/swagger/index.html
+- 6-	Se crea el gestor de archivos que se encarga de leer y escribir en json https://www.newtonsoft.com/json/help/html/SerializingJSON.htm dotnet add projectSoft.csproj package Newtonsoft.Json
 - 7-	Para cada actor se debe crear: Entidad->Interfaz->Repositorio->Controlador
 - 8-	En el startup.cs de debe especificar la inyección de dependencias con AddTransient
 - 9-	Como mejor opción se implementa el uso de https://github.com/ttu/json-flatfile-datastore para facilitar el manejo del json que contendrá la informacion de todas las tablas.
