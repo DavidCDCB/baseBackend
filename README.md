@@ -8,3 +8,28 @@
 - 8-	En el startup.cs de debe especificar la inyección de dependencias con AddTransient
 - 9-	Como mejor opción se implementa el uso de https://github.com/ttu/json-flatfile-datastore para facilitar el manejo del json que contendrá la informacion de todas las tablas.
 - 10-	Se hace el uso de validaciones básicas para evitar datos duplicados y consultas inexistentes.
+
+SDK de .NET (que refleje cualquier global.json):
+ Version:   5.0.201
+ Commit:    a09bd5c86c
+
+Entorno de tiempo de ejecución:
+ OS Name:     ubuntu
+ OS Version:  18.04
+ OS Platform: Linux
+ RID:         ubuntu.18.04-x64
+ Base Path:   /usr/share/dotnet/sdk/5.0.201/
+
+Host (useful for support):
+  Version: 5.0.4
+  Commit:  f27d337295
+
+.NET SDKs installed:
+  5.0.201 [/usr/share/dotnet/sdk]
+
+.NET runtimes installed:
+  Microsoft.AspNetCore.App 5.0.4 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 5.0.4 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+
+To install additional .NET runtimes or SDKs:
+  https://aka.ms/dotnet-download
