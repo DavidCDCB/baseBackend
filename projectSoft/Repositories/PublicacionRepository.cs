@@ -24,7 +24,7 @@ namespace projectSoft.Repositories
 		{
 			try
 			{
-				var collection = store.GetCollection<Publicacion>();
+				IDocumentCollection<Publicacion> collection = store.GetCollection<Publicacion>();
 				var results = collection.AsQueryable().First(x=>x.IdPublicacion==id);
 				return results;
 			}
@@ -40,7 +40,7 @@ namespace projectSoft.Repositories
 		*/
 		public IEnumerable<Publicacion> GetPublicaciones()
 		{
-			var collection = store.GetCollection<Publicacion>();
+			IDocumentCollection<Publicacion> collection = store.GetCollection<Publicacion>();
 			var results = collection.AsQueryable();
 			
 			return results;
@@ -52,7 +52,7 @@ namespace projectSoft.Repositories
 		*/
 		public async Task<IEnumerable<Publicacion>> SetPublicacionAsync(List<Publicacion> publicaciones)
 		{
-			var collection = store.GetCollection<Publicacion>();
+			IDocumentCollection<Publicacion> collection = store.GetCollection<Publicacion>();
 			List<int> ids=collection.AsQueryable().Select(x=>x.IdPublicacion).ToList();
 			int nId = ids.Max();
 
@@ -69,15 +69,16 @@ namespace projectSoft.Repositories
 		Actualiza un elemento especificado por id y pasado por json
 		PUT http://localhost:5000/api/Publicacion/102
 		*/
-		public async Task<Publicacion> UpdatePublicacion(int id, Publicacion publicacion)
+		public async Task<Publicacion> UpdatePublicacion(Publicacion publicacion)
 		{
-			Publicacion actual = this.GetPublicacion(id);
+			Publicacion actual = this.GetPublicacion(publicacion.IdPublicacion);
 
 			if(actual != null){
-				var collection = store.GetCollection<Publicacion>();
-				await collection.ReplaceOneAsync(e => e.IdPublicacion == id,publicacion);
+				IDocumentCollection<Publicacion> collection = store.GetCollection<Publicacion>();
+				await collection.ReplaceOneAsync(e => e.IdPublicacion == publicacion.IdPublicacion,publicacion);
+				return GetPublicacion(publicacion.IdPublicacion);
 			}
-			return actual;
+			return null;
 		}
 
 		/*
@@ -89,7 +90,7 @@ namespace projectSoft.Repositories
 			Publicacion actual = this.GetPublicacion(id);
 
 			if(actual != null){
-				var collection = store.GetCollection<Publicacion>();
+				IDocumentCollection<Publicacion> collection = store.GetCollection<Publicacion>();
 				await collection.DeleteOneAsync(e => e.IdPublicacion == id);
 			}
 			return actual;

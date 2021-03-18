@@ -9,7 +9,7 @@ namespace projectSoft.Interfaces
         IEnumerable<Publicacion> GetPublicaciones();
         Publicacion GetPublicacion(int id);
         Task<IEnumerable<Publicacion>> SetPublicacionAsync(List<Publicacion> publicacion);
-        Task<Publicacion> UpdatePublicacion(int id,Publicacion publicacion);
+        Task<Publicacion> UpdatePublicacion(Publicacion publicacion);
         Task<Publicacion> RemovePublicacion(int id);
     }
 }

@@ -1,42 +1,14 @@
 {
   "publicacion": [
     {
-      "idPublicacion": 91,
-      "idUsuario": 1,
-      "fecha": "1980-01-18T16:31:37.94",
-      "descripcion": "HOLA",
-      "imagen": "http://vehistito.com/ereentfor/er/esnt/reevebutha.bmp",
-      "com": null
-    },
-    {
-      "idPublicacion": 92,
-      "idUsuario": 1,
-      "fecha": "1980-01-18T16:31:37.94",
-      "descripcion": "sdsds",
-      "imagen": "http://vehistito.com/ereentfor/er/esnt/reevebutha.bmp",
-      "com": null
-    },
-    {
-      "idPublicacion": 101,
-      "idUsuario": 1,
-      "fecha": "1980-01-18T16:31:37.94",
-      "descripcion": "HOLA",
-      "imagen": "http://vehistito.com/ereentfor/er/esnt/reevebutha.bmp",
-      "com": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
       "idPublicacion": 102,
       "idUsuario": 1,
       "fecha": "1980-01-18T16:31:37.94",
-      "descripcion": "HOrtLA",
+      "descripcion": "s",
       "imagen": "http://vehistito.com/ereentfor/er/esnt/reevebutha.bmp",
       "com": [
         9,
-        1,
+        9,
         2,
         3
       ]
@@ -45,61 +17,37 @@
       "idPublicacion": 103,
       "idUsuario": 1,
       "fecha": "1980-01-18T16:31:37.94",
-      "descripcion": "HOLA",
+      "descripcion": "Hola",
       "imagen": "http://vehistito.com/ereentfor/er/esnt/reevebutha.bmp",
       "com": [
-        1
+        9,
+        9,
+        2,
+        3
       ]
     },
     {
       "idPublicacion": 104,
       "idUsuario": 1,
       "fecha": "1980-01-18T16:31:37.94",
-      "descripcion": "DAVID",
+      "descripcion": "d",
       "imagen": "http://vehistito.com/ereentfor/er/esnt/reevebutha.bmp",
       "com": [
-        1
+        9,
+        9,
+        2,
+        3
       ]
-    },
+    }
+  ],
+  "comentario": [
     {
-      "idPublicacion": 105,
-      "idUsuario": 1,
-      "fecha": "1980-01-18T16:31:37.94",
-      "descripcion": "DAVID",
-      "imagen": "http://vehistito.com/ereentfor/er/esnt/reevebutha.bmp",
-      "com": [
-        1
-      ]
-    },
-    {
-      "idPublicacion": 106,
-      "idUsuario": 1,
-      "fecha": "1980-01-18T16:31:37.94",
-      "descripcion": "DAVID",
-      "imagen": "http://vehistito.com/ereentfor/er/esnt/reevebutha.bmp",
-      "com": [
-        1
-      ]
-    },
-    {
-      "idPublicacion": 107,
-      "idUsuario": 1,
-      "fecha": "1980-01-18T16:31:37.94",
-      "descripcion": "DAVID",
-      "imagen": "http://vehistito.com/ereentfor/er/esnt/reevebutha.bmp",
-      "com": [
-        1
-      ]
-    },
-    {
-      "idPublicacion": 108,
-      "idUsuario": 1,
-      "fecha": "1980-01-18T16:31:37.94",
-      "descripcion": "DAVID3",
-      "imagen": "http://vehistito.com/ereentfor/er/esnt/reevebutha.bmp",
-      "com": [
-        1
-      ]
+      "idComentario": 1,
+      "idPublicacion": 0,
+      "idUsuario": 0,
+      "descripcion": null,
+      "fecha": "0001-01-01T00:00:00",
+      "activo": false
     }
   ]
 }

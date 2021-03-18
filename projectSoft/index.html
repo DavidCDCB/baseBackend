@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Pruebas Web</title>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+	<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/pretty-print-json@1.0/dist/pretty-print-json.css>
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		pre{
+			margin: 30px;
+			padding: 20px;
+			box-shadow: 1px -5px 37px 1px rgba(0,0,0,0.75);
+			border-radius: 11px 11px 11px 11px;
+			overflow-y: scroll;
+			height: 500px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="app"></div>
+	
+	<script src=https://cdn.jsdelivr.net/npm/pretty-print-json@1.0/dist/pretty-print-json.min.js></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="main.js"></script>
+
+	<script>
+		let data = {
+			"idPublicacion": 102,
+			"idUsuario": 1,
+			"fecha": "1980-01-18T16:31:37.94",
+			"descripcion": "Hola",
+			"imagen": "http://vehistito.com/ereentfor/er/esnt/reevebutha.bmp",
+			"com": [9,9,2,3]
+		}
+		request("GET",'http://localhost:5000/api/Publicacion',data);
+	</script>
+</body>
+
+</html>

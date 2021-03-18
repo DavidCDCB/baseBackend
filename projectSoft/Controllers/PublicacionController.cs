@@ -28,7 +28,6 @@ namespace projectSoft.Controllers
         public IActionResult GetPublicacion(int id)
         {
             var publicacion =  this._postRepository.GetPublicacion(id);
-
             if (publicacion == null)
             {
                 return NotFound();
@@ -52,10 +51,10 @@ namespace projectSoft.Controllers
 
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdatePublicacion(int id,Publicacion publicacion)
+        [HttpPut]
+        public async Task<IActionResult> UpdatePublicacion(Publicacion publicacion)
         {
-            var actualizado = await this._postRepository.UpdatePublicacion(id,publicacion);
+            var actualizado = await this._postRepository.UpdatePublicacion(publicacion);
 
             if (actualizado == null)
             {
