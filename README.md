@@ -8,7 +8,7 @@
 - 8-	En el startup.cs de debe especificar la inyección de dependencias con AddTransient
 - 9-	Como mejor opción se implementa el uso de https://github.com/ttu/json-flatfile-datastore para facilitar el manejo del json que contendrá la informacion de todas las tablas.
 - 10-	Se hace el uso de validaciones básicas para evitar datos duplicados y consultas inexistentes.
-- 11- Hay que tener en cuenta el funcionamiento con un Host local de prueba solo se pude dar si se desactiva las CORS ya que esto evita que un host sin los suficientes requisitos técnicos pueda interactuar con el servidor esto se hace en Startup.cs
+- 11- Hay que tener en cuenta que el funcionamiento con un Host local de prueba solo se puede dar si se desactiva las CORS ya que esto evíta que un host sin los suficientes requisitos técnicos pueda interactuar con el servidor, esto se hace en Startup.cs
 
 SDK de .NET (que refleje cualquier global.json):
  Version:   5.0.201
